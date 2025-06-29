@@ -6,10 +6,4 @@ Marvels of Butterfly Species Butterflies, the "enchanted wings" of the insect wo
 Classifies 75 species of butterflies using a CNN model (MobileNetV2) trained on 6,499 images.
 Achieves 90% validation accuracy.
 Uses transfer learning to reduce training time and improve accuracy.
-Built with TensorFlow and deployed using Streamlit.
-📁 Files Included:
-
-app.py : Streamlit app code
-butterfly_model.h5 : Pre-trained Keras model file
-requirements.txt : Python dependencies for Streamlit Cloud deployment
-🦋 Butterfly Classifier
+Built with TensorFlow .............
