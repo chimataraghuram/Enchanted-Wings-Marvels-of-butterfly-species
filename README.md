@@ -1,50 +1,50 @@
-# Butterfly Species Classifier
+# 🦋 Enchanted Wings: Marvels of Butterfly Species
 
-A Streamlit application that uses a Deep Learning model to classify butterfly species from uploaded images.
+A modern, high-performance butterfly species classifier and encyclopedia. This project features a **React** frontend with **Streamlit-inspired aesthetics** and a **FastAPI** backend powering a Deep Learning model.
 
-## Features
+## 🌟 Created By
+**CHIMATA RAGHURAM**
 
-- **Image Upload**: Upload `.jpg`, `.jpeg`, or `.png` images of butterflies.
-- **Real-time Prediction**: Instantly classifies the butterfly species using a pre-trained Keras model.
-- **Confidence Score**: Displays the confidence level of the prediction.
-- **Comparison**: Compares the predicted label with the actual label (derived from the filename).
+## 🚀 Live Demo
+The web interface is deployed at:
+**[https://chimataraghuram.github.io/Enchanted-Wings-Marvels-of-butterfly-species/](https://chimataraghuram.github.io/Enchanted-Wings-Marvels-of-butterfly-species/)**
 
-## Installation
+*(Note: The search functionality works globally, while the image classification requires the backend API to be running locally or on a server.)*
 
-1.  **Clone the repository**:
-    ```bash
-    git clone <repository-url>
-    cd butterfly-classifier-app-main
-    ```
+## ✨ Features
+- **Modern UI**: Clean, professional design inspired by Streamlit's "Enchanted" theme.
+- **Species Search**: Real-time search for butterfly names with images fetched dynamically from Wikipedia.
+- **Deep Learning Classifier**: Identify butterfly species using a pre-trained Keras model.
+- **Drag-and-Drop**: Intuitive file uploading with real-time feedback.
+- **Responsive Design**: Works perfectly across desktops, tablets, and mobile devices.
 
-2.  **Create a virtual environment** (optional but recommended):
-    ```bash
-    python -m venv venv
-    # Windows
-    venv\Scripts\activate
-    # macOS/Linux
-    source venv/bin/activate
-    ```
+## 🛠️ Tech Stack
+- **Frontend**: React, Vite, CSS3
+- **Backend**: FastAPI, Python 3.11
+- **ML Engine**: TensorFlow, Keras, NumPy
+- **Deployment**: GitHub Actions, GitHub Pages
 
-3.  **Install dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+## 📦 Installation & Setup
 
-## Usage
+### 1. Backend (Model API)
+```bash
+cd backend
+pip install -r requirements.txt
+python main.py
+```
 
-1.  **Run the application**:
-    ```bash
-    streamlit run app.py
-    ```
+### 2. Frontend (Web Interface)
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-2.  **Open in Browser**: The app will open automatically in your default browser (usually at `http://localhost:8501`).
+## 📂 Project Structure
+- `/frontend`: React application source code and assets.
+- `/backend`: FastAPI server, Deep Learning model (`.keras`), and class indices.
+- `/.github/workflows`: Automated deployment pipeline for GitHub Pages.
+- `/Project Report`: Comprehensive documentation, design diagrams, and performance reports.
 
-3.  **Classify**: Upload an image to see the prediction.
-
-## Files
-
-- `app.py`: Main Streamlit application code.
-- `Butterfly_classification.keras`: Pre-trained Keras model.
-- `class_indices.pkl`: Dictionary mapping class indices to labels.
-- `requirements.txt`: List of Python dependencies.
+---
+*Developed with ❤️ by CHIMATA RAGHURAM*
