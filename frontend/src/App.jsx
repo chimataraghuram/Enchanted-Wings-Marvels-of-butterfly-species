@@ -19,9 +19,14 @@ function App() {
   const fileInputRef = useRef(null)
 
   useEffect(() => {
-    fetch('http://localhost:8000/species')
+    // Fetch species list from local JSON for static site compatibility
+    fetch('./species.json')
       .then(res => res.json())
-      .then(data => setSpeciesList(data.species))
+      .then(data => {
+        // Handle both {species: [...]} and सीधा [...] formats
+        const list = Array.isArray(data) ? data : data.species
+        setSpeciesList(list)
+      })
       .catch(err => console.error("Failed to fetch species list", err))
   }, [])
 
