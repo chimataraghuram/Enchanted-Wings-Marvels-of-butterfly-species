@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Streamlit
+.streamlit/
+
+# Model and Data (optional, if you want to exclude large files)
+# *.keras
+# *.pkl
+# *.h5
+
+# OS
+.DS_Store
+Thumbs.db
